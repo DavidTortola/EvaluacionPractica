@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Evaluación Práctica</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="areas.js"></script>
+</head>
+
+
+
+<body style="background-color:gray">
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4" style="border:solid 1px black;border-radius:5px">
+                    <div>
+                        <br />
+                        <p style="font-weight:bold">Áreas</p>
+                        <br />
+                        <br />
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Nombre</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Username"
+                                aria-describedby="basic-addon1" id="txtUser">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Estado</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Username"
+                                aria-describedby="basic-addon1" id="txtPassword">
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col">
+                                <button type="button" class="btn btn-primary" onclick="RegisterArea();">Crear</button>
+                            </div>
+                        </div>
+                        <br />
+                    </div>
+                </div>
+                <div class="col-4"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <br />
+    <br />
+
+    <div class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <table class="table">
+                        <thead id="thead">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Nombre Del Área</th>
+                                <th scope="col">Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-4"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
